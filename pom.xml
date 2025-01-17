@@ -9,7 +9,7 @@
   <version>1.0.3-SNAPSHOT</version>
   <properties>
     <spring.version>3.0.5.RELEASE</spring.version>
-    <slf4j.version>1.6.1</slf4j.version>
+    <slf4j.version>1.7.36</slf4j.version>
     <m2eclipse.wtp.contextRoot>/petclinic</m2eclipse.wtp.contextRoot>
   </properties>
   <scm>
@@ -291,9 +291,7 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <copy overwrite="true"
-                      file="${basedir}/src/test/tomcat/logback-test.xml"
-                      todir="${project.build.directory}/classes" />
+                    <copy overwrite="true" file="${basedir}/src/test/tomcat/logback-test.xml" todir="${project.build.directory}/classes"/>
                   </tasks>
                 </configuration>
               </execution>
